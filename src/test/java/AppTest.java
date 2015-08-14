@@ -15,19 +15,18 @@ public class AppTest extends FluentTest{
   @ClassRule
   public static ServerRule server = new ServerRule();
 
-  // @Test
-  // public void rootTest(){
-  //   goTo("http://localhost:4567/");
-  //   assertThat(pageSource()).contains("Play Rock Paper Scissors!!");
-  // }
-  //
-  // @Test
-  // public void doesRockBeatPaper(){
-  //   goTo("http://localhost:4567/");
-  //   fill("#playerOne").with("rock");
-  //   fill("#playerTwo").with("paper");
-  //   submit(".btn");
-  //   assertThat(pageSource()).contains("Player two, you win!");
-  // }
+  @Test
+  public void rootTest(){
+    goTo("http://localhost:4567/");
+    assertThat(pageSource()).contains("Word Puzzle!");
+  }
+
+  @Test
+  public void doesWordPuzzle(){
+    goTo("http://localhost:4567/");
+    fill("#userInput").with("Epicodus");
+    submit(".btn");
+    assertThat(pageSource()).contains("-p-c-d-s");
+  }
 
 }
