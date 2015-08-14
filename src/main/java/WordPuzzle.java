@@ -21,13 +21,17 @@ public class WordPuzzle {
       Map<String, Object> model = new HashMap<String, Object>();
       model.put("template", "templates/WordPuzzle.vtl");
 
+      // Create a string and store userInput
       String s = request.queryParams("userInput");
+
+      // put replaced string to webpage
       model.put("WordPuzzle", replacedAEIOU(s));
 
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
   }
 
+  // Create a method to replace the vowels in a string
   public static String replacedAEIOU(String s){
     s = s.replace('a', '-');
     s = s.replace('A', '-');
