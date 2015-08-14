@@ -6,6 +6,7 @@ Discription -<br>
 Epicodus Java 2015 Summer Class week 1 CodeReview<br>
 Create a website that uses a method to replace vowels in a string with the dash symbol "-" to create a word puzzle to solve. The resulting word puzzle should be on a new page that does not show the original string so that another person can try and guess it.
 <br>
+<br>
 Setup instructions -<br>
 1. Download the files to your computer.<br>
 2. Navigate to the folder directory.<br>
