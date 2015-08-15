@@ -30,19 +30,33 @@ public class WordPuzzle {
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
   }
-
+  
   // Create a method to replace the vowels in a string
-  public static String replacedAEIOU(String s){
-    s = s.replace('a', '-');
-    s = s.replace('A', '-');
-    s = s.replace('e', '-');
-    s = s.replace('E', '-');
-    s = s.replace('i', '-');
-    s = s.replace('I', '-');
-    s = s.replace('o', '-');
-    s = s.replace('O', '-');
-    s = s.replace('u', '-');
-    s = s.replace('U', '-');
-    return s;
+  public static String replacedAEIOU(String s){ 
+    String newString = ""; 
+    String vowels = "aeiouAEIOU";
+  	for (String letter : s.split("")) {
+  	  if (vowels.contains(letter)) {
+  		letter = "-";
+  	  }
+  	  newString += letter;
+  	}
+    return newString;
   }
+  
+  // Create a method to replace the vowels in a string
+  // public static String replacedAEIOU(String s){
+  //   s = s.replace('a', '-');
+  //   s = s.replace('A', '-');
+  //   s = s.replace('e', '-');
+  //   s = s.replace('E', '-');
+  //   s = s.replace('i', '-');
+  //   s = s.replace('I', '-');
+  //   s = s.replace('o', '-');
+  //   s = s.replace('O', '-');
+  //   s = s.replace('u', '-');
+  //   s = s.replace('U', '-');
+  //   return s;
+  // }
+
 }
