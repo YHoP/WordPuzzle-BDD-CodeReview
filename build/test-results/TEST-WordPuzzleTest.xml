@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="WordPuzzleTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2015-08-14T17:17:00" hostname="epicodus-104.local" time="0.0">
-  <properties/>
-  <testcase name="wordPuzzle_ReplaceWord_String" classname="WordPuzzleTest" time="0.0"/>
-  <testcase name="wordPuzzle_ReplaceA_String" classname="WordPuzzleTest" time="0.0"/>
-  <system-out><![CDATA[]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>
